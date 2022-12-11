@@ -8,7 +8,7 @@ tags: [初めてのブログ]
 みなさんこんにちは，Bony_Chopsです．この度，ブログを始めてみました．どうぞよろしくおねがいします．  
 また，この記事は[長野高専 Advent Calender 2022](https://qiita.com/advent-calendar/2022/nnct) 11日目の記事でもあります．急遽アドカレ仕様に書き直しましたw
 :::caution
-急いで書いているため，日本語がおかしい箇所があるかもしれません．Issue，PRは[こちら](https://github.com/BonyChops/blogs)から
+急いで書いているため，日本語がおかしい箇所があるかもしれません．Issue，PRは[こちら](https://github.com/BonyChops/blog)から
 :::
 
 ## 既視感の正体
@@ -117,6 +117,7 @@ Docusaurusは他にもこんな優れた機能があります
     };
     ```
     1. `./src/pages/index.js`を削除する．
+
 
 ## TODO
 - GitHubでPRを受け付けるにあたって，そのフォーマットを決める
