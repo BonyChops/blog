@@ -2,7 +2,7 @@
 prove: lets-docusaurus
 title: 自己証明まとめ
 authors: [bonychops]
-tags: [初めてのブログ]
+tags: []
 ---
 
 この記事に、自分が所有、許可したものなどをまとめておきます。署名に使うPGPキーは[457B F5D6 9ECE 0883](https://keybase.io/bonychops/pgp_keys.asc)です([Keybase](https://keybase.io/bonychops)も参照)。
@@ -83,24 +83,24 @@ vprgqQ==
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-先生，お久しぶりです．18時頃SMSでお送りしたお誘いのメッセージは私，鈴木颯太が確かにお送りしたことを本メッセージを用いて証明します．メッセージに含めた確認コードは"kKM9qYdS"です．
+先生，お久しぶりです．2022/12/11 18:20頃SMSでお送りしたお誘いのメッセージは私，鈴木颯太が確かにお送りしたことを本メッセージを用いて証明します．メッセージに含めた確認コードは"kKM9qYdS"です．
 また，bonychops.com(所有権はkeybase.io/bonychopsで証明済)に私の情報がありますので，bonychops.comの情報と，先生が知っている私自身の情報とが一致していることを確認してください(ただ，年齢だけ19歳になっていますが実際には20歳です)．
 
 よろしくお願いいたします．
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEewPYodaz16USn7NsRXv11p7OCIMFAmOVmbEACgkQRXv11p7O
-CINhgRAAikS/mjTlsUyrS11ioeuHEnFaA6Gr2v/3guq9oA79FHSyJqPwB4v7E3mE
-CgQTW4MA3DxmTiz8doiFjWiGLK0niiuw0zW+U2izrwFxRf9jtUAV/Hru/SFkXa/s
-jPw1cPeYrX4CWi6S1Nc54GaD+o2HMvgEHsUGvrzQgzd2/QJmPW2DjR7ytBMLoUgv
-mBbq0Tn2sI3i4RI5k7n5UOC8uQpUq0jVQCAK+lVsJVgcvqQVrfCHWFgARoOrtq70
-sGW3ors/AiclzsnxN9WjCsBFghfdeQf6qrfNgBn2AHjq5rCgx9+FHnT5WPy9tWZj
-ogpeFPr2agKb1VEE3lqYD737gtp/eSuee7+b5MXWHf4vgauNX/qK3pwjXn+WKArx
-C7U58co19KP/6qsmnw7u4fEHcwyBgbpw/50xSXfr6LqTg7wAbCEs9gK6Es7q2P4A
-bn7cjvOShc2Z57UrgTkHdbWIjP/74p3fHv5ylVZoiQKUUP7A+VW/Q8+V97oArFGt
-yW5ev5CozRos60oKAbqckaCeQvm3zMizpgy6zaLSJXSnn9RtGbxEA0Zdg+wVyfo2
-9RlC80Kbnv+dCJwx6+ugH+HwtJwKy6G3eoAVA96LQ3LMiOxS+EMq3o3j7z8HGo31
-OwDw79iaVtJiLEHKQivTcyVe2yqozZuynVp0thsVoJ/+Oi4fVb0=
-=kn0U
+iQIzBAEBCgAdFiEEewPYodaz16USn7NsRXv11p7OCIMFAmOVoOAACgkQRXv11p7O
+CIPIIQ/7BoKqeXuz3bK4cYJP3Et++o3SngAB2brnorbCw4ghgfz5iGhzxWNOv8qS
+pJ14OsXhgrx1ymx9t5cqM05RIXt9EL0wJlC8MTb5yvwZdYObMQWG7lFW/P0eMbn1
+qV3WUWxfKvnDdsLBnZIn2spmxhyrFy9gn0nGAEHi38sTE1Pu4tD/qW32k7fZc61z
+Qz5shX6wQ8qGm7AyfuAIxZ0j9nQcR1iI9o99FuVKso45VG8Dd8I/iVkLHXip+XTP
+DtZwgRxUzqg74akSBPCPU9rbRoatsNfMj1fvYX0CedFLtzEbv13P86lFrH5CUWkq
+q5NcFTF3PC8b3zXY99a7v+B7jZWppDRAXhVQ9TDEA2lCWDocH3g6c/enHomINYEE
+X8ohA26xMyanwtcoxohvb33gKiPk+BZnOcnSLEoz6rCRiNwcEMFCgOO5u5yOnsKv
+dnnD85T5C5523lhNSXK3Ev09OS+1y7NlEktDVcnmSDz1UPiZrA+nudoTO4ph2l9E
+RijLXPn/VbpVU++nvPU9IA26ucK8PbE0pY1AND1VJnAwW5jqJE51kJhmLFkOvkMd
+YhMWendfGyZhxJlthcGM6Kzgl6jLguH65/pg3Jwv5MzaB2+sDsM8NReRPkQR3Zo5
+p9HkYwWdpnm6InNysGd6wcHCaX09m5hSE3tqbfsLix62+L4ppxk=
+=hZRB
 -----END PGP SIGNATURE-----
 ```
