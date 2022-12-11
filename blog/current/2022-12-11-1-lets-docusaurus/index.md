@@ -7,9 +7,12 @@ tags: [初めてのブログ]
 
 みなさんこんにちは，Bony_Chopsです．この度，ブログを始めてみました．どうぞよろしくおねがいします．  
 また，この記事は[長野高専 Advent Calender 2022](https://qiita.com/advent-calendar/2022/nnct) 11日目の記事でもあります．急遽アドカレ仕様に書き直しましたw
+<!--truncate-->
+
 :::caution
 急いで書いているため，日本語がおかしい箇所があるかもしれません．Issue，PRは[こちら](https://github.com/BonyChops/blog)から
 :::
+
 
 ## 既視感の正体
 「あれ？お前昔からブログやってなかったっけ？」という方，**鋭いです**．というのも，そもそもブログは[ほねつき備忘録](https://bonychops.hatenablog.jp)でやってます．つまり正確に言えば，ブログ環境の**移行**ですね．
