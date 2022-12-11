@@ -8,7 +8,7 @@ tags: [初めてのブログ]
 みなさんこんにちは，Bony_Chopsです．この度，ブログを始めてみました．どうぞよろしくおねがいします．  
 また，この記事は[長野高専 Advent Calender 2022](https://qiita.com/advent-calendar/2022/nnct) 11日目の記事でもあります．急遽アドカレ仕様に書き直しましたw
 :::caution
-急いで書いているため，日本語がおかしい箇所があるかもしれません．Issue，PRは[こちら](https://github.com/BonyChops/blogs)から
+急いで書いているため，日本語がおかしい箇所があるかもしれません．Issue，PRは[こちら](https://github.com/BonyChops/blog)から
 :::
 
 ## 既視感の正体
@@ -117,6 +117,44 @@ Docusaurusは他にもこんな優れた機能があります
     };
     ```
     1. `./src/pages/index.js`を削除する．
+1. 先に`npm run build`をしておく．
+1. [console.firebase.google.com](https://console.firebase.google.com)でプロジェクトを作成する．
+1. `firebase init hostings`を実行する．
+  :::caution
+  FirebaseCLIがインストールされている必要があります．npm環境がある場合は以下でインストール．
+  ```
+  npm install -g firebase-tools
+  ```
+  :::
+    1. 作成したプロジェクトを選ぶ．
+    1. 対話型ウィザードを進める．
+      ```
+      ? What do you want to use as your public directory? build
+      ? Configure as a single-page app (rewrite all urls to /index.html)? No
+      ? Set up automatic builds and deploys with GitHub? Yes
+      ? File build/404.html already exists. Overwrite? No
+      i  Skipping write of build/404.html
+      ? File build/index.html already exists. Overwrite? No
+      i  Skipping write of build/index.html
+
+      (中略)
+
+      ✔  Success! Logged into GitHub as BonyChops
+
+      ? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) BonyChops/blog
+
+      (中略)
+
+      ? Set up the workflow to run a build script before every deploy? Yes
+      ? What script should be run before every deploy? npm ci && npm run build
+      ? Set up automatic deployment to your site's live channel when a PR is merged? Yes
+      ? What is the name of the GitHub branch associated with your site's live channel? main
+
+      (中略)
+
+      ✔  Firebase initialization complete!
+      ```
+1. `main`ブランチにpushすると自動的にFirebase Hostingsへデプロイされます．
 
 ## TODO
 - GitHubでPRを受け付けるにあたって，そのフォーマットを決める
