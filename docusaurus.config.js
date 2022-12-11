@@ -74,7 +74,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Blogs',
+        title: 'Blog',
         logo: {
           alt: 'Bony_Chops',
           src: 'https://github.com/bonychops.png',
