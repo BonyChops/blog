@@ -13,7 +13,7 @@ tags: []
 
 
 
-# Linux
+## Linux
 - Dconf Editor: Ubuntu向け設定ツール(Winのレジストリエディタに当たる)
 - Tweaks: Ubuntuのちょっと上級向け設定ツール
 - Peek: LinuxでGIFアニメ/MP4動画作れるやつ．Waylandでうまく動かない；；
@@ -26,7 +26,7 @@ tags: []
   - WinならImgBurn
 - nmap: ポート探しはおまかせ
 
-## Arch Linux
+### Arch Linux
 基本的には[Wiki](https://wiki.archlinux.jp/)を見ればOK(たまに日本語版が古いことがある)。
 
 - pacman: パッケージマネージャ
@@ -52,7 +52,7 @@ tags: []
   - qt5-wayland
   - fcitx5-qt
 
-# Node
+## Node
 - forever: 永続化
   - pm2: こっちのほうが人気
 - Sequelize: SQLのORM
@@ -61,15 +61,15 @@ tags: []
 # Windows
 - [Dependencies](https://github.com/lucasg/Dependencies): アプリケーションの依存関係(dll)を確認できる．足りないやつもすぐにわかる．
 
-# 文章系
+## 文章系
 - CSV+: マルチプラットフォームのExcelライクなCSVエディタ
 - latexmk: こいつとVSCodeを組み合わせれば最強のLaTeX執筆環境
 
-# Android
+## Android
 - Genymotion: Linuxでも使えるAndroidエミュ．デフォでrootがあるのが良い
 - Vysor: Androidスクリーンキャプチャの中で最も優秀だったやつ．今はどうなんだろう？
 
-# ネットワーク
+## ネットワーク
 - Wireshark: パケットキャプチャ
 - mitmproxy: Android/iOS HTTPS パケットキャプチャ
 - Gvpngate: Linux向けVPNGateのGUI版
@@ -78,7 +78,7 @@ tags: []
 - NextDNS: Twitterに依存しすぎたときはこいつで制限する．PC含めどのデバイスでもブロックできるから重宝．
 - ZeroSSL: Let's Encryptの次に使いたい無料SSL証明局
 
-# その他
+## その他
 - Keepa: Amazonの価格変動を見抜く
 - [bakusoku_aviutl_plugin](https://github.com/suzune25254649/bakusoku_aviutl_plugin): その名の通りAviUtlの動作を軽くするもの．機能を制限するわけではなく，既存の機能を最適化してるから好き
 - 拡張編集RAMプレビュー(AviUtl): レンダー結果をキャッシュして表示させる
