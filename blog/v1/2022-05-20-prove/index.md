@@ -10,7 +10,7 @@ tags: []
 
 
 :::caution
-本記事は旧ブログである[ほねつき備忘録](https://bonychops.hatenablog.jp)を移植したものです．こちらで
+本記事は旧ブログである[ほねつき備忘録](https://bonychops.hatenablog.jp)を移植したものです．
 :::
 
 
