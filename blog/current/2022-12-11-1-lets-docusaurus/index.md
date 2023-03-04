@@ -2,7 +2,7 @@
 slug: lets-docusaurus
 title: ブログをソース管理しよう！【Docusaurus編】
 authors: [bonychops]
-tags: [初めてのブログ]
+tags: [初めてのブログ, 'Bony-Blog 更新履歴']
 ---
 
 みなさんこんにちは，Bony_Chopsです．この度，ブログを始めてみました．どうぞよろしくおねがいします．  
