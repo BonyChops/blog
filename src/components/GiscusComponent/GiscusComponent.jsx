@@ -8,7 +8,7 @@ export default function GiscusComponent() {
   return (
     <Giscus
       repo="BonyChops/blog"
-      repoId="R_kgDOIVqhTg"
+      repoId="R_kgDOImGMcQ"
       category="Comment"
       categoryId="DIC_kwDOImGMcc4CUp3b"
       mapping="pathname"
