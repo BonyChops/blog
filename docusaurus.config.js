@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require('remark-math');
+const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -41,13 +43,16 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/BonyChops/blog/blob/main/',
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
           trackingID: process.env.G_TAG ?? 'unset',
-        }
+        },
+
       }),
     ],
   ],
@@ -69,6 +74,30 @@ const config = {
          * Path to data on filesystem relative to site dir.
          */
         path: './blog/v1',
+
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'shop',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: '/shop',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './blog/shop',
+        blogTitle: 'Shops',
+        postsPerPage: 'ALL',
+        blogSidebarTitle: '商品',
+        blogSidebarCount: 'ALL',
       },
     ]
   ],
@@ -86,6 +115,10 @@ const config = {
           {
             href: '/v1',
             label: 'ほねつき備忘録アーカイブ',
+          },
+          {
+            href: '/shop',
+            label: 'Shop',
           },
           {
             href: 'https://bonychops.hatenablog.jp/',
@@ -132,6 +165,17 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
 };
 
 module.exports = config;
