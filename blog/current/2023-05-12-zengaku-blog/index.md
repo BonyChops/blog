@@ -8,12 +8,23 @@ tags: ["GitHub Actions", "CI/CD", "筑波大学"]
 
 <!--truncate-->
 
+## 概要
+
+ここで紹介する方法は，直接 HTML を書いたり，最終的に静的な HTML が生成されるツールを用いる時に使えます．具体的には以下のツールを使う際におすすめです．
+
+- React
+- Gatsby
+- Docusaurus
+- Hugo
+
+www.u.tsukuba.ac.jp でホストしている自身のブログのソースは GitHub で管理しており，デプロイは贅沢にも GitHub Actions でしています．Actions から u.tsukuba.ac.jp に SSH を用いた rsync で無理やり転送しています．ノウハウは参考になるかもしれないので，書いておきます．  
+![github-to-tsukuba](github-to-tsukuba.png)
+
 :::info
 ここの内容は実際に www.u.tsukuba.ac.jp の自身のブログで公開しているものです．
 :::
 
-www.u.tsukuba.ac.jp でホストしているブログのソースは GitHub で管理しており，デプロイは贅沢にも GitHub Actions でしています．Actions から u.tsukuba.ac.jp に SSH を用いた rsync で無理やり転送しています．ノウハウは参考になるかもしれないので，書いておきます．  
-![github-to-tsukuba](github-to-tsukuba.png)
+今回は Hugo でブログを作成してみました．
 
 1. Hugo プロジェクトの作成
    ```shell
