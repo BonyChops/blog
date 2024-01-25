@@ -54,7 +54,7 @@ tags: ["Bony-Blog 更新履歴"]
 
 ## 注意事項
 
-:::caution
+:::warning
 **必ず確認してください！**
 :::
 

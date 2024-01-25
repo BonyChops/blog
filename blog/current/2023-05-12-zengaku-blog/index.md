@@ -37,7 +37,7 @@ www.u.tsukuba.ac.jp でホストしている自身のブログのソースは Gi
     git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
    ```
 1. `config.yml`を書き換える．[PaperMod 公式サイトの Sample `config.yml`](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/#sample-configyml)を参考に．
-   :::caution
+   :::warning
    `baseURL`を`https://www.u.tsukuba.ac.jp/~ユーザー名/`にするのを忘れずに！
    :::
 1. `hugo server`でちゃんと表示されるかを確認する．(`http://localhost:1313`)
@@ -119,7 +119,7 @@ www.u.tsukuba.ac.jp でホストしている自身のブログのソースは Gi
 
    - 前提条件
      - SSH 秘密鍵と公開鍵のペアを作成する
-       :::caution
+       :::warning
        今まで SSH 鍵を作ったことがある人は，今までの公開鍵・秘密鍵を上書きしないよう要注意！！！！！！
        :::
        - `ssh-keygen -t ed25519`
