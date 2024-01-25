@@ -2,34 +2,38 @@
 slug: lets-docusaurus
 title: ブログをソース管理しよう！【Docusaurus編】
 authors: [bonychops]
-tags: [初めてのブログ, 'Bony-Blog 更新履歴']
+tags: [初めてのブログ, "Bony-Blog 更新履歴"]
 ---
 
-みなさんこんにちは，Bony_Chopsです．この度，ブログを始めてみました．どうぞよろしくおねがいします．  
-また，この記事は[長野高専 Advent Calender 2022](https://qiita.com/advent-calendar/2022/nnct) 11日目の記事でもあります．急遽アドカレ仕様に書き直しましたw
+みなさんこんにちは，Bony_Chops です．この度，ブログを始めてみました．どうぞよろしくおねがいします．  
+また，この記事は[長野高専 Advent Calender 2022](https://qiita.com/advent-calendar/2022/nnct) 11 日目の記事でもあります．急遽アドカレ仕様に書き直しました w
+
 <!--truncate-->
 
 :::caution
-急いで書いているため，日本語がおかしい箇所があるかもしれません．Issue，PRは[こちら](https://github.com/BonyChops/blog)から
+急いで書いているため，日本語がおかしい箇所があるかもしれません．Issue，PR は[こちら](https://github.com/BonyChops/blog)から
 :::
 
-
 ## 既視感の正体
+
 「あれ？お前昔からブログやってなかったっけ？」という方，**鋭いです**．というのも，そもそもブログは[ほねつき備忘録](https://bonychops.hatenablog.jp)でやってます．つまり正確に言えば，ブログ環境の**移行**ですね．
 
 ## なぜ移行したの？
+
 今回ブログを移行させるにあたって，そのモチベーションは次になります．
+
 - オレオレブログがしたかった
-    - **とあるサービスに依存したブログから移行したかった**
+  - **とあるサービスに依存したブログから移行したかった**
 - 自分のドメインでホストしたかった
-    - 従来使っていたはてなブログは無料だと独自ドメインが使えない
-- Docusaurusのブログ機能をめちゃめちゃ使ってみたかった
-    - 正直ここの要因がでかい
+  - 従来使っていたはてなブログは無料だと独自ドメインが使えない
+- Docusaurus のブログ機能をめちゃめちゃ使ってみたかった
+  - 正直ここの要因がでかい
 
 ## 運用
-このブログはGitHubの[BonyChops/blog](https://github.com/BonyChops/blog)で管理しています．ソースコードを手元で管理しているので，**いままではブログ会社が閉じればおしまいでしたが，今はソースさえあれば無敵です**．Yahoo!ブログ終了の悲劇とかを回避できますね．
 
-あとは，GitHub Actionsを用いて**Firebase Hostings**に自動デプロイを組みます．`main`ブランチでblog.b7s.dev，プルリクを投げるとそれに準じたプレビューチャンネルとして適当なURLにデプロイされるようになってます
+このブログは GitHub の[BonyChops/blog](https://github.com/BonyChops/blog)で管理しています．ソースコードを手元で管理しているので，**いままではブログ会社が閉じればおしまいでしたが，今はソースさえあれば無敵です**．Yahoo!ブログ終了の悲劇とかを回避できますね．
+
+あとは，GitHub Actions を用いて**Firebase Hostings**に自動デプロイを組みます．`main`ブランチで blog.b7s.dev，プルリクを投げるとそれに準じたプレビューチャンネルとして適当な URL にデプロイされるようになってます
 
 <details>
 <summary>GitHub Actionsのワークフロー</summary>
@@ -41,7 +45,7 @@ tags: [初めてのブログ, 'Bony-Blog 更新履歴']
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - main
@@ -53,8 +57,8 @@ jobs:
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_B2D8F }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_B2D8F }}"
           channelId: live
           projectId: blog-b2d8f
 ```
@@ -64,107 +68,116 @@ jobs:
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on PR
-'on': pull_request
+"on": pull_request
 jobs:
   build_and_preview:
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
+    if: "${{ github.event.pull_request.head.repo.full_name == github.repository }}"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_B2D8F }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_BLOG_B2D8F }}"
           projectId: blog-b2d8f
-
 ```
+
 </details>
 
-## Docusaurusのすごいところ
-Docusaurusは他にもこんな優れた機能があります
-- i18n対応
+## Docusaurus のすごいところ
+
+Docusaurus は他にもこんな優れた機能があります
+
+- i18n 対応
 - ライトテーマ/ダークテーマ切り替え
-  - PCなら右上，スマホならサイドメニューにあります
+  - PC なら右上，スマホならサイドメニューにあります
 - その気になればドキュメントも作れる
   - 「俺の取扱説明書」とか作れる(誰得)
 
 ## セットアップ
+
 一応アドカレなんで，少しでも有益になるよう軽くやり方を書いておきます．
- 
-1. Docusaurusをセットアップ  
-    `プロジェクト名`は`blog`とかで良いです
-    ```
-    npx create-docusaurus@latest プロジェクト名 classic
-    cd プロジェクト名
-    ```
-1. Docusaurusは本来，ドキュメントを書くためのものなので色んな機能があります．今回はBlogのみにするため，Blog Onlyモードにします[^1]．
-    1. `docusaurus.config.js`を編集
-    ```js title="docusaurus.config.js"
-    module.exports = {
-    // ...
-    presets: [
-        [
-        '@docusaurus/preset-classic',
-        {
-            // highlight-next-line
-            docs: false, // 任意: ドキュメントを無効にする
-            blog: {
-            // highlight-next-line
-            routeBasePath: '/', // ブログページをルートにします
-            /* other blog options */
-            },
-        },
-        ],
-    ],
-    };
-    ```
-    1. `./src/pages/index.js`を削除する．
+
+1. Docusaurus をセットアップ  
+   `プロジェクト名`は`blog`とかで良いです
+   ```
+   npx create-docusaurus@latest プロジェクト名 classic
+   cd プロジェクト名
+   ```
+1. Docusaurus は本来，ドキュメントを書くためのものなので色んな機能があります．今回は Blog のみにするため，Blog Only モードにします[^1]．
+   1. `docusaurus.config.js`を編集
+   ```js title="docusaurus.config.js"
+   module.exports = {
+     // ...
+     presets: [
+       [
+         "@docusaurus/preset-classic",
+         {
+           // highlight-next-line
+           docs: false, // 任意: ドキュメントを無効にする
+           blog: {
+             // highlight-next-line
+             routeBasePath: "/", // ブログページをルートにします
+             /* other blog options */
+           },
+         },
+       ],
+     ],
+   };
+   ```
+   1. `./src/pages/index.js`を削除する．
 1. 先に`npm run build`をしておく．
 1. [console.firebase.google.com](https://console.firebase.google.com)でプロジェクトを作成する．
 1. `firebase init hostings`を実行する．
-  :::caution
-  FirebaseCLIがインストールされている必要があります．npm環境がある場合は以下でインストール．
-  ```
-  npm install -g firebase-tools
-  ```
-  :::
-    1. 作成したプロジェクトを選ぶ．
-    1. 対話型ウィザードを進める．
-      ```
-      ? What do you want to use as your public directory? build
-      ? Configure as a single-page app (rewrite all urls to /index.html)? No
-      ? Set up automatic builds and deploys with GitHub? Yes
-      ? File build/404.html already exists. Overwrite? No
-      i  Skipping write of build/404.html
-      ? File build/index.html already exists. Overwrite? No
-      i  Skipping write of build/index.html
 
-      (中略)
+   :::warning
+   FirebaseCLI がインストールされている必要があります．npm 環境がある場合は以下でインストール．
 
-      ✔  Success! Logged into GitHub as BonyChops
+   ```
+   npm install -g firebase-tools
+   ```
 
-      ? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) BonyChops/blog
+   :::
 
-      (中略)
+   1. 作成したプロジェクトを選ぶ．
+   1. 対話型ウィザードを進める．
 
-      ? Set up the workflow to run a build script before every deploy? Yes
-      ? What script should be run before every deploy? npm ci && npm run build
-      ? Set up automatic deployment to your site's live channel when a PR is merged? Yes
-      ? What is the name of the GitHub branch associated with your site's live channel? main
+   ```
+   ? What do you want to use as your public directory? build
+   ? Configure as a single-page app (rewrite all urls to /index.html)? No
+   ? Set up automatic builds and deploys with GitHub? Yes
+   ? File build/404.html already exists. Overwrite? No
+   i  Skipping write of build/404.html
+   ? File build/index.html already exists. Overwrite? No
+   i  Skipping write of build/index.html
 
-      (中略)
+   (中略)
 
-      ✔  Firebase initialization complete!
-      ```
-1. `main`ブランチにpushすると自動的にFirebase Hostingsへデプロイされます．
+   ✔  Success! Logged into GitHub as BonyChops
+
+   ? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) BonyChops/blog
+
+   (中略)
+
+   ? Set up the workflow to run a build script before every deploy? Yes
+   ? What script should be run before every deploy? npm ci && npm run build
+   ? Set up automatic deployment to your site's live channel when a PR is merged? Yes
+   ? What is the name of the GitHub branch associated with your site's live channel? main
+
+   (中略)
+
+   ✔  Firebase initialization complete!
+   ```
+
+1. `main`ブランチに push すると自動的に Firebase Hostings へデプロイされます．
 
 ## TODO
-- GitHubでPRを受け付けるにあたって，そのフォーマットを決める
+
+- GitHub で PR を受け付けるにあたって，そのフォーマットを決める
 - 一部設定できていない箇所があるため，終わらせる
   - [x] 編集リンクを直す
   - [ ] 色とか変えてみたい
   - [ ] いらないものを消す
-
 
 [^1]: [Blog-only mode | Docusaurus](https://docusaurus.io/docs/next/blog#blog-only-mode)

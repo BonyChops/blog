@@ -5,28 +5,26 @@ authors: [bonychops]
 tags: []
 ---
 
-この記事に、自分が所有、許可したものなどをまとめておきます。署名に使うPGPキーは[457B F5D6 9ECE 0883](https://keybase.io/bonychops/pgp_keys.asc)です([Keybase](https://keybase.io/bonychops)も参照)。
+この記事に、自分が所有、許可したものなどをまとめておきます。署名に使う PGP キーは[457B F5D6 9ECE 0883](https://keybase.io/bonychops/pgp_keys.asc)です([Keybase](https://keybase.io/bonychops)も参照)。
+
 <!--truncate-->
 
-
-:::caution
+:::warning
 本記事は旧ブログである[ほねつき備忘録](https://bonychops.hatenablog.jp)を移植したものです．
 :::
 
-
-
-
 ## 検証方法
+
 以下などを参考に行ってください。
 
-[PGP署名の検証方法](/v1/2022/05/20/PGP-check)
+[PGP 署名の検証方法](/v1/2022/05/20/PGP-check)
 
+## 所有する SNS アカウント
 
-
-## 所有するSNSアカウント
 [b7s.dev/s](https://b7s.dev/s)に載せています(そういえば本ブログを載せていませんね、、、、)。
 
 以下の署名メッセージは[bonychops.com/socials](https://bonychops.com/socials)に掲載したら消します
+
 ```
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
@@ -50,7 +48,7 @@ e2BTGKW/P3+9hKA5GZKR6+dgelrFwuOXIEYhVI2p+YvGYI2nF7M=
 -----END PGP SIGNATURE-----
 ```
 
-## DESPAIR海藻
+## DESPAIR 海藻
 
 [https://twitter.com/K_NNCT/status/1527628613524131841?s=20&t=R32twn0bO8ZWJtzkmJbk1A:embed]
 
@@ -79,6 +77,7 @@ vprgqQ==
 ```
 
 ## 同級会のお誘い {#reunion-invitation}
+
 ```
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
