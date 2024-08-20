@@ -9,8 +9,18 @@ tags: [Mac, UTM, 無料]
 
 <!--truncate-->
 
+:::danger 非推奨になりました
+**VMware Fusion Proが個人利用に限り無償で使用できるようになったことから、この方法は非推奨とさせていただきます。**  
+VMware Fusion Proを用いる方法は以下の記事が参考になります。  
+[VMware Fusion 環境 (macOS) に Windows 11 仮想マシンを作成してみた - Qiita](https://qiita.com/sanjushi003/items/2c77880fbf999ddf94fe)
+:::
+
+<details>
+<summary>元の記事</summary>
+
+
 :::info
-別に M1 に限らず，M2 や今後出るかもしれない M3 でも再現できると思います．要は，**Apple Silicon(arm チップ)**向けの記事ってことです
+別に M1 に限らず，M2 や今後出るかもしれない M3 でも再現できると思います．要は， **Apple Silicon(arm チップ)** 向けの記事ってことです
 :::
 
 :::warning
@@ -159,3 +169,5 @@ Windows では任意 CPU アーキテクチャ向けのバイナリを Arm で�
 :::warning
 今回使っているのはあくまでも**Arm 版**Windows であり，x64 は Windows の謎テクノロジーで動くだけなので，ハイパフォーマンスや通常通りの動作をすることが保証されていません(例えば，Visual Studio は x64 マシンにリモート接続することを推奨してきます)．使う時は自己責任でね．
 :::
+
+</details>
