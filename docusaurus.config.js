@@ -30,6 +30,13 @@ const config = {
     locales: ["ja"],
   },
 
+  future: {
+    experimental_faster: {
+      rspackBundler: true, // required flag
+      rspackPersistentCache: true, // new flag
+    },
+  },
+
   presets: [
     [
       "@docusaurus/preset-classic",
