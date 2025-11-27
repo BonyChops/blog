@@ -1,5 +1,9 @@
 bonychops:
-  name: Bony_Chops
-  url: https://github.com/BonyChops
+  name: BonyChops
+  url: https://b7s.dev
   title: '@BonyChops'
   image_url: https://github.com/BonyChops.png
+  socials:
+    x: https://x.com/BonyChops
+    github: https://github.com/BonyChops
+

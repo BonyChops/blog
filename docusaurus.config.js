@@ -9,7 +9,7 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Bony_Chops Blog",
+  title: "BonyChops Blog",
   tagline: "Dinosaurs are cool",
   url: "https://blog.b7s.dev",
   baseUrl: "/",
@@ -30,6 +30,13 @@ const config = {
     locales: ["ja"],
   },
 
+  future: {
+    experimental_faster: {
+      rspackBundler: true, // required flag
+      rspackPersistentCache: true, // new flag
+    },
+  },
+
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -45,6 +52,7 @@ const config = {
           editUrl: "https://github.com/BonyChops/blog/blob/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          showLastUpdateTime: true
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -75,6 +83,15 @@ const config = {
         path: "./blog/v1",
       },
     ],
+    [
+      '@acid-info/docusaurus-og',
+      {
+        path: './preview-images', // relative to the build directory
+        imageRenderers: {
+          'docusaurus-plugin-content-blog': require('./lib/components/ImageRenderer').blog,
+        },
+      },
+    ],
   ],
 
   themeConfig:
@@ -83,7 +100,7 @@ const config = {
       navbar: {
         title: "Blog",
         logo: {
-          alt: "Bony_Chops",
+          alt: "BonyChops",
           src: "https://github.com/bonychops.png",
         },
         items: [
