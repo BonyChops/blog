@@ -76,6 +76,15 @@ const config = {
         path: "./blog/v1",
       },
     ],
+    [
+      '@acid-info/docusaurus-og',
+      {
+        path: './preview-images', // relative to the build directory
+        imageRenderers: {
+          'docusaurus-plugin-content-blog': require('./lib/components/ImageRenderer').blog,
+        },
+      },
+    ],
   ],
 
   themeConfig:
