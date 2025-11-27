@@ -53,7 +53,8 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
           showLastUpdateTime: true,
-          postsPerPage: "ALL"
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
