@@ -52,7 +52,8 @@ const config = {
           editUrl: "https://github.com/BonyChops/blog/blob/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
+          postsPerPage: "ALL"
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
