@@ -9,7 +9,7 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Bony_Chops Blog",
+  title: "BonyChops Blog",
   tagline: "Dinosaurs are cool",
   url: "https://blog.b7s.dev",
   baseUrl: "/",
@@ -100,7 +100,7 @@ const config = {
       navbar: {
         title: "Blog",
         logo: {
-          alt: "Bony_Chops",
+          alt: "BonyChops",
           src: "https://github.com/bonychops.png",
         },
         items: [
