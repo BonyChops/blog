@@ -19,13 +19,13 @@ advent: 2025
 公開次第正式なタイトルと URL に変えておきます
 :::
 
-| 日付  | タイトル                                | カレンダー                                                                   | サイト       |
-| ----- | --------------------------------------- | ---------------------------------------------------------------------------- | ------------ |
-| 12/1  | Docusaurus で OGP 画像を設定する (仮)   | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | blog.b7s.dev |
-| 12/13 | Proxmox + Terraform + Ansible 関連 (仮) | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | blog.b7s.dev |
-| 12/20 | GL.iNet Flint 2 で MAP-E (仮)           | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | 未定         |
-| 12/21 | AI で X の黒歴史を一気に葬ろう (仮)     | [klis Advent Calendar 2025](https://adventar.org/calendars/11538)            | blog.b7s.dev |
-| 12/23 | 2025 年を振り返って                     | [klis Advent Calendar 2025](https://adventar.org/calendars/11538)            | blog.b7s.dev |
+| 日付  | タイトル                                                       | カレンダー                                                                   | サイト       |
+| ----- | -------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------ |
+| 12/1  | [Docusaurus で OGP 画像を設定する](/2025/12/01/docusaurus-ogp) | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | blog.b7s.dev |
+| 12/13 | Proxmox + Terraform + Ansible 関連 (仮)                        | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | blog.b7s.dev |
+| 12/20 | GL.iNet Flint 2 で MAP-E (仮)                                  | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | 未定         |
+| 12/21 | AI で X の黒歴史を一気に葬ろう (仮)                            | [klis Advent Calendar 2025](https://adventar.org/calendars/11538)            | blog.b7s.dev |
+| 12/23 | 2025 年を振り返って                                            | [klis Advent Calendar 2025](https://adventar.org/calendars/11538)            | blog.b7s.dev |
 
 今年は 12/1 から[^1]投稿を始めますが間に合うんでしょうか...お楽しみに！
 
