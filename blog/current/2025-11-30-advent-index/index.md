@@ -2,6 +2,7 @@
 title: 2025 年のアドベントカレンダー一覧
 authors: [bonychops]
 tags: ["アドベントカレンダー", "Advent Calendar 2025"]
+advent: 2025
 ---
 
 今年も Advent Calendar の季節がやってきました！今年は多めに参加する予定なので、こちらに一覧をまとめておきます。
