@@ -135,6 +135,7 @@ export const RedFrame: React.FC<FragmentProps & { advent?: string }> = ({
 			<p
 				style={{
 					display: "flex",
+					width: "100%",
 					position: "relative",
 					fontSize: 46,
 					color: advent ? "white" : "black",
@@ -142,6 +143,7 @@ export const RedFrame: React.FC<FragmentProps & { advent?: string }> = ({
 					padding: "20px",
 					flexShrink: 0,
 					minWidth: "0px",
+					justifyContent: "flex-end",
 				}}
 			>
 				<img
