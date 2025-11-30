@@ -10,7 +10,7 @@ const katex = require("rehype-katex");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "BonyChops Blog",
-  tagline: "Dinosaurs are cool",
+  tagline: "BonyChops のブログです。",
   url: process.env.URL ?? "https://blog.b7s.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
