@@ -21,7 +21,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx', '**.md*') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-
-      - run: npm i
+      - run: npm ci
       - run: npm run build
         env:
           G_TAG: "${{ secrets.G_TAG }}"
