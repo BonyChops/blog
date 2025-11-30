@@ -11,7 +11,7 @@ const katex = require("rehype-katex");
 const config = {
   title: "BonyChops Blog",
   tagline: "Dinosaurs are cool",
-  url: "https://blog.b7s.dev",
+  url: process.env.URL ?? "https://blog.b7s.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

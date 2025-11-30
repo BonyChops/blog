@@ -10,7 +10,7 @@
     "outDir": "lib",
     "module": "CommonJS",
     "target": "esnext",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "types": [
       "node"
     ],

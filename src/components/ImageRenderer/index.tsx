@@ -1,43 +1,22 @@
 // src/ImageRenderers.tsx
 /** biome-ignore-all lint/correctness/useJsxKeyInIterable: <explanation> */
+
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import type {
 	BlogPageData,
 	DocsPageData,
 	ImageRenderer,
 	PageData,
 } from "@acid-info/docusaurus-og";
-import { readFileSync } from "fs";
-import { join } from "path";
 import React from "react";
+import Default from "./Default";
+import WithTitle from "./WithTitle";
 
-export const blog: ImageRenderer<BlogPageData> = (data, context) => {
+export const blog: ImageRenderer<BlogPageData> = (data) => {
 	if (data.pageType !== "post") {
 		return [
-			<div
-				style={{
-					fontSize: 72,
-					background: "white",
-					width: "100%",
-					height: "100%",
-					display: "flex",
-					flexDirection: "row",
-					alignItems: "center",
-					justifyContent: "center",
-					color: "black",
-				}}
-			>
-				<img
-					style={{
-						borderRadius: 60,
-						marginRight: 30,
-					}}
-					src="https://github.com/BonyChops.png"
-					alt="BonyChops"
-					width={96}
-					height={96}
-				/>
-				<p>Blog</p>
-			</div>,
+			<Default />,
 			{
 				width: 1200,
 				height: 630,
@@ -54,51 +33,19 @@ export const blog: ImageRenderer<BlogPageData> = (data, context) => {
 			},
 		];
 	}
-	const title = data?.data?.metadata?.title ?? "Untitled";
+
+	const { title, frontMatter } = data.data.metadata;
+	const { advent: _advent } = frontMatter;
+
+	const advent =
+		typeof _advent === "string"
+			? _advent
+			: typeof _advent === "number"
+				? _advent.toString()
+				: undefined;
 
 	return [
-		<div
-			style={{
-				fontSize: 72,
-				background: "white",
-				width: "100%",
-				height: "100%",
-				display: "flex",
-				flexDirection: "column",
-				alignItems: "center",
-				justifyContent: "center",
-			}}
-		>
-			<div
-				style={{
-					display: "flex",
-					color: "black",
-				}}
-			>
-				<p>{title}</p>
-			</div>
-			<p
-				style={{
-					display: "flex",
-					position: "absolute",
-					bottom: 10,
-					fontSize: 46,
-					color: "black",
-				}}
-			>
-				<img
-					style={{
-						borderRadius: 60,
-						marginRight: 20,
-					}}
-					src="https://github.com/BonyChops.png"
-					alt="BonyChops"
-					width={64}
-					height={64}
-				/>
-				Blog
-			</p>
-		</div>,
+		<WithTitle title={title} advent={advent} />,
 		{
 			width: 1200,
 			height: 630,
