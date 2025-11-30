@@ -3,6 +3,7 @@ slug: lets-docusaurus
 title: ブログをソース管理しよう！【Docusaurus編】
 authors: [bonychops]
 tags: [初めてのブログ, "Bony-Blog 更新履歴"]
+advent: 2022
 ---
 
 みなさんこんにちは，Bony_Chops です．この度，ブログを始めてみました．どうぞよろしくおねがいします．  
