@@ -22,6 +22,7 @@ advent: 2025
 | 日付  | タイトル                                                       | カレンダー                                                                   | サイト       |
 | ----- | -------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------ |
 | 12/1  | [Docusaurus で OGP 画像を設定する](/2025/12/01/docusaurus-ogp) | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | blog.b7s.dev |
+| 12/6  | [Bitwarden でも .env 管理がしたい 【Mac編】](https://zenn.dev/bony_chops/articles/25024f5b13d7a6) | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | Zenn |
 | 12/13 | Proxmox + Terraform + Ansible 関連 (仮)                        | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | blog.b7s.dev |
 | 12/20 | GL.iNet Flint 2 で MAP-E (仮)                                  | [長野高専 Advent Calendar 2025](https://qiita.com/advent-calendar/2025/nnct) | 未定         |
 | 12/21 | AI で X の黒歴史を一気に葬ろう (仮)                            | [klis Advent Calendar 2025](https://adventar.org/calendars/11538)            | blog.b7s.dev |
